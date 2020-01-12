@@ -104,6 +104,7 @@ void CBook::DeleteData(int iCount)
 	ofstream ofile;
 	char cTempBuf[NUM1 + NUM1 + NUM2 + NUM2];
 	file.open("book.dat", ios::binary | ios::in | ios::out);
+<<<<<<< HEAD
 	tmpfile.open("temp.dat", ios::binary | ios::in | ios::out | ios::trunc);
 	file.seekg(0, ios::end);
 	respos = file.tellg();
@@ -137,3 +138,11 @@ void CBook::DeleteData(int iCount)
 	remove("temp.dat");
 }
 
+=======
+}
+
+int main()
+{
+	return 0;
+}
+>>>>>>> cbff321d2c46c5d53e49db1f9aecccdfd43dba0d
